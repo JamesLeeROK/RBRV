@@ -1,0 +1,2 @@
+[console_scripts]
+mpu6050_node = imu_sensor.mpu6050_node:main

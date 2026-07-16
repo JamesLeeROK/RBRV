@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating imu_sensor.egg-info
+writing imu_sensor.egg-info/PKG-INFO
+writing dependency_links to imu_sensor.egg-info/dependency_links.txt
+writing entry points to imu_sensor.egg-info/entry_points.txt
+writing requirements to imu_sensor.egg-info/requires.txt
+writing top-level names to imu_sensor.egg-info/top_level.txt
+writing manifest file 'imu_sensor.egg-info/SOURCES.txt'
+reading manifest file 'imu_sensor.egg-info/SOURCES.txt'
+writing manifest file 'imu_sensor.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages/imu-sensor.egg-link (link to .)
+Installing mpu6050_node script to /home/rbrv/ros2_ws/install/imu_sensor/lib/imu_sensor
+
+Installed /home/rbrv/ros2_ws/build/imu_sensor
+running symlink_data
+creating /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index
+creating /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index/resource_index
+creating /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index/resource_index/packages
+symbolically linking /home/rbrv/ros2_ws/build/imu_sensor/resource/imu_sensor -> /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index/resource_index/packages
+symbolically linking /home/rbrv/ros2_ws/build/imu_sensor/package.xml -> /home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor

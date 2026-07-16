@@ -1,0 +1,9 @@
+source;share/mecanum_driver_pid/hook/pythonpath.ps1
+source;share/mecanum_driver_pid/hook/pythonpath.dsv
+source;share/mecanum_driver_pid/hook/pythonpath.sh
+source;share/mecanum_driver_pid/hook/ament_prefix_path.ps1
+source;share/mecanum_driver_pid/hook/ament_prefix_path.dsv
+source;share/mecanum_driver_pid/hook/ament_prefix_path.sh
+source;../../build/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath_develop.ps1
+source;../../build/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath_develop.dsv
+source;../../build/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath_develop.sh

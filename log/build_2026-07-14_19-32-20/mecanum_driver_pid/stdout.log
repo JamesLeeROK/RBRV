@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating mecanum_driver_pid.egg-info
+writing mecanum_driver_pid.egg-info/PKG-INFO
+writing dependency_links to mecanum_driver_pid.egg-info/dependency_links.txt
+writing entry points to mecanum_driver_pid.egg-info/entry_points.txt
+writing requirements to mecanum_driver_pid.egg-info/requires.txt
+writing top-level names to mecanum_driver_pid.egg-info/top_level.txt
+writing manifest file 'mecanum_driver_pid.egg-info/SOURCES.txt'
+reading manifest file 'mecanum_driver_pid.egg-info/SOURCES.txt'
+writing manifest file 'mecanum_driver_pid.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages/mecanum-driver-pid.egg-link (link to .)
+Installing mecanum_driver_node script to /home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/mecanum_driver_pid
+Installing pwm_adjustable script to /home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/mecanum_driver_pid
+
+Installed /home/rbrv/ros2_ws/build/mecanum_driver_pid
+running symlink_data
+creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index
+creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index/resource_index
+creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index/resource_index/packages
+symbolically linking /home/rbrv/ros2_ws/build/mecanum_driver_pid/resource/mecanum_driver_pid -> /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index/resource_index/packages
+symbolically linking /home/rbrv/ros2_ws/build/mecanum_driver_pid/package.xml -> /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid

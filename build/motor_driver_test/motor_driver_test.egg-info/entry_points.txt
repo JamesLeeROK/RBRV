@@ -1,0 +1,3 @@
+[console_scripts]
+mecanum_driver_node = motor_driver_test.mecanum_driver_node:main
+motor_teleop_subscriber = motor_driver_test.motor_teleop_subscriber:main

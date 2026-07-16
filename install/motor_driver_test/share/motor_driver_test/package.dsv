@@ -1,0 +1,9 @@
+source;share/motor_driver_test/hook/pythonpath.ps1
+source;share/motor_driver_test/hook/pythonpath.dsv
+source;share/motor_driver_test/hook/pythonpath.sh
+source;share/motor_driver_test/hook/ament_prefix_path.ps1
+source;share/motor_driver_test/hook/ament_prefix_path.dsv
+source;share/motor_driver_test/hook/ament_prefix_path.sh
+source;../../build/motor_driver_test/share/motor_driver_test/hook/pythonpath_develop.ps1
+source;../../build/motor_driver_test/share/motor_driver_test/hook/pythonpath_develop.dsv
+source;../../build/motor_driver_test/share/motor_driver_test/hook/pythonpath_develop.sh

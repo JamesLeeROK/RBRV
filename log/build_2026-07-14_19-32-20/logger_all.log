@@ -1,0 +1,249 @@
+[0.192s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.192s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff98d59ac0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff98f0e4b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff98f0e4b0>>, mixin_verb=('build',))
+[0.291s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.292s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rbrv/ros2_ws'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_sensor) by extension 'ros'
+[0.351s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_sensor' with type 'ros.ament_python' and name 'imu_sensor'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extension 'ignore'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_driver_pid) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_driver_pid' with type 'ros.ament_python' and name 'mecanum_driver_pid'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver_test) by extension 'ros'
+[0.356s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_driver_test' with type 'ros.ament_python' and name 'motor_driver_test'
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.396s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rbrv/ros2_ws/install/motor_driver_test' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.396s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rbrv/ros2_ws/install/mecanum_driver_pid' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.396s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/rbrv/ros2_ws/install/imu_sensor' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.400s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/rbrv/ros2_ws/install
+[0.402s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/rbrv/ydlidar_ws/install
+[0.406s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 353 installed packages in /opt/ros/jazzy
+[0.413s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.552s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_args' from command line to 'None'
+[0.552s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_target' from command line to 'None'
+[0.552s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.553s] Level 5:colcon.colcon_core.verb:set package 'imu_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.553s] DEBUG:colcon.colcon_core.verb:Building package 'imu_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rbrv/ros2_ws/build/imu_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rbrv/ros2_ws/install/imu_sensor', 'merge_install': False, 'path': '/home/rbrv/ros2_ws/src/imu_sensor', 'symlink_install': True, 'test_result_base': None}
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'cmake_args' from command line to 'None'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'cmake_target' from command line to 'None'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'cmake_clean_cache' from command line to 'False'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'cmake_clean_first' from command line to 'False'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'cmake_force_configure' from command line to 'False'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'ament_cmake_args' from command line to 'None'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'catkin_cmake_args' from command line to 'None'
+[0.554s] Level 5:colcon.colcon_core.verb:set package 'mecanum_driver_pid' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.554s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_driver_pid' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rbrv/ros2_ws/build/mecanum_driver_pid', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rbrv/ros2_ws/install/mecanum_driver_pid', 'merge_install': False, 'path': '/home/rbrv/ros2_ws/src/mecanum_driver_pid', 'symlink_install': True, 'test_result_base': None}
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'cmake_target' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.556s] Level 5:colcon.colcon_core.verb:set package 'motor_driver_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.556s] DEBUG:colcon.colcon_core.verb:Building package 'motor_driver_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rbrv/ros2_ws/build/motor_driver_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rbrv/ros2_ws/install/motor_driver_test', 'merge_install': False, 'path': '/home/rbrv/ros2_ws/src/motor_driver_test', 'symlink_install': True, 'test_result_base': None}
+[0.557s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.560s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rbrv/ros2_ws/src/imu_sensor' with build type 'ament_python'
+[0.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_sensor', 'ament_prefix_path')
+[0.568s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/hook/ament_prefix_path.ps1'
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/hook/ament_prefix_path.dsv'
+[0.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/hook/ament_prefix_path.sh'
+[0.579s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.601s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rbrv/ros2_ws/src/mecanum_driver_pid' with build type 'ament_python'
+[0.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_driver_pid', 'ament_prefix_path')
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/hook/ament_prefix_path.ps1'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/hook/ament_prefix_path.dsv'
+[0.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/hook/ament_prefix_path.sh'
+[0.612s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.612s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.623s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rbrv/ros2_ws/src/motor_driver_test' with build type 'ament_python'
+[0.625s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_driver_test', 'ament_prefix_path')
+[0.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/hook/ament_prefix_path.ps1'
+[0.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/hook/ament_prefix_path.dsv'
+[0.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/hook/ament_prefix_path.sh'
+[0.633s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.633s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.451s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rbrv/ros2_ws/src/imu_sensor'
+[1.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.225s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rbrv/ros2_ws/src/mecanum_driver_pid'
+[2.226s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.226s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.921s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rbrv/ros2_ws/src/motor_driver_test'
+[2.922s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.922s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.493s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: init_catalog, install_headers, check, install_scripts, extract_messages, dist_info, upload_docs, install_lib, bdist_wheel, develop, test, sdist, build_scripts, bdist_egg, upload, install_egg_info, build_py, install_data, clean, install, symlink_data, egg_info, bdist, register, update_catalog, build, alias, build_ext, build_clib, bdist_dumb, bdist_rpm, rotate, saveopts, easy_install, setopt, compile_catalog, editable_wheel
+[5.578s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: init_catalog, install_headers, check, install_scripts, extract_messages, dist_info, upload_docs, install_lib, bdist_wheel, develop, test, sdist, build_scripts, bdist_egg, upload, install_egg_info, build_py, install_data, clean, install, symlink_data, egg_info, bdist, register, update_catalog, build, alias, build_ext, build_clib, bdist_dumb, bdist_rpm, rotate, saveopts, easy_install, setopt, compile_catalog, editable_wheel
+[5.746s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: init_catalog, install_headers, check, install_scripts, extract_messages, dist_info, upload_docs, install_lib, bdist_wheel, develop, test, sdist, build_scripts, bdist_egg, upload, install_egg_info, build_py, install_data, clean, install, symlink_data, egg_info, bdist, register, update_catalog, build, alias, build_ext, build_clib, bdist_dumb, bdist_rpm, rotate, saveopts, easy_install, setopt, compile_catalog, editable_wheel
+[6.813s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --dry-run, --verbose, --user, --force-installation-into-system-dir, --allow-hosts, --no-deps, --version, --site-dirs, --install-layout, --local-snapshots-ok, --editable, --no-user-cfg, --build-directory, --egg-path, --record, --optimize, --zip-ok, --find-links, --no-find-links, --script-dir, --help, --exclude-scripts, --prefix, --quiet, --always-copy, --install-dir, --index-url, --always-unzip, --uninstall, --multi-version, --upgrade
+[6.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rbrv/ros2_ws/build/motor_driver_test': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/motor_driver_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/motor_driver_test/build --no-deps symlink_data
+[7.205s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --dry-run, --verbose, --user, --force-installation-into-system-dir, --allow-hosts, --no-deps, --version, --site-dirs, --install-layout, --local-snapshots-ok, --editable, --no-user-cfg, --build-directory, --egg-path, --record, --optimize, --zip-ok, --find-links, --no-find-links, --script-dir, --help, --exclude-scripts, --prefix, --quiet, --always-copy, --install-dir, --index-url, --always-unzip, --uninstall, --multi-version, --upgrade
+[7.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rbrv/ros2_ws/build/mecanum_driver_pid': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/mecanum_driver_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/mecanum_driver_pid/build --no-deps symlink_data
+[7.394s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --dry-run, --verbose, --user, --force-installation-into-system-dir, --allow-hosts, --no-deps, --version, --site-dirs, --install-layout, --local-snapshots-ok, --editable, --no-user-cfg, --build-directory, --egg-path, --record, --optimize, --zip-ok, --find-links, --no-find-links, --script-dir, --help, --exclude-scripts, --prefix, --quiet, --always-copy, --install-dir, --index-url, --always-unzip, --uninstall, --multi-version, --upgrade
+[7.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rbrv/ros2_ws/build/imu_sensor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/imu_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/imu_sensor/build --no-deps symlink_data
+[9.495s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_driver_test', 'pythonpath_develop')
+[9.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/build/motor_driver_test/share/motor_driver_test/hook/pythonpath_develop.ps1'
+[9.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rbrv/ros2_ws/build/motor_driver_test' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/motor_driver_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/motor_driver_test/build --no-deps symlink_data
+[9.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/build/motor_driver_test/share/motor_driver_test/hook/pythonpath_develop.dsv'
+[9.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/build/motor_driver_test/share/motor_driver_test/hook/pythonpath_develop.sh'
+[9.530s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/motor_driver_test' for CMake module files
+[9.531s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/motor_driver_test' for CMake config files
+[9.533s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/motor_driver_test/lib'
+[9.533s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/motor_driver_test/bin'
+[9.533s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/motor_driver_test/lib/pkgconfig/motor_driver_test.pc'
+[9.534s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages'
+[9.534s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_driver_test', 'pythonpath')
+[9.535s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/hook/pythonpath.ps1'
+[9.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/hook/pythonpath.dsv'
+[9.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/hook/pythonpath.sh'
+[9.538s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/motor_driver_test/bin'
+[9.539s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_driver_test)
+[9.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/package.ps1'
+[9.545s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/package.dsv'
+[9.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/package.sh'
+[9.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/package.bash'
+[9.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test/package.zsh'
+[9.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rbrv/ros2_ws/install/motor_driver_test/share/colcon-core/packages/motor_driver_test)
+[10.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_driver_pid', 'pythonpath_develop')
+[10.019s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/build/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath_develop.ps1'
+[10.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rbrv/ros2_ws/build/mecanum_driver_pid' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/mecanum_driver_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/mecanum_driver_pid/build --no-deps symlink_data
+[10.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/build/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath_develop.dsv'
+[10.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/build/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath_develop.sh'
+[10.031s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/mecanum_driver_pid' for CMake module files
+[10.033s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/mecanum_driver_pid' for CMake config files
+[10.034s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib'
+[10.034s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/mecanum_driver_pid/bin'
+[10.034s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/pkgconfig/mecanum_driver_pid.pc'
+[10.035s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages'
+[10.035s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_driver_pid', 'pythonpath')
+[10.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath.ps1'
+[10.037s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath.dsv'
+[10.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/hook/pythonpath.sh'
+[10.040s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/mecanum_driver_pid/bin'
+[10.040s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_driver_pid)
+[10.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/package.ps1'
+[10.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/package.dsv'
+[10.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/package.sh'
+[10.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/package.bash'
+[10.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid/package.zsh'
+[10.054s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rbrv/ros2_ws/install/mecanum_driver_pid/share/colcon-core/packages/mecanum_driver_pid)
+[10.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_sensor', 'pythonpath_develop')
+[10.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/build/imu_sensor/share/imu_sensor/hook/pythonpath_develop.ps1'
+[10.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/build/imu_sensor/share/imu_sensor/hook/pythonpath_develop.dsv'
+[10.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/build/imu_sensor/share/imu_sensor/hook/pythonpath_develop.sh'
+[10.075s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/imu_sensor' for CMake module files
+[10.078s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/imu_sensor' for CMake config files
+[10.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rbrv/ros2_ws/build/imu_sensor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/imu_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/imu_sensor/build --no-deps symlink_data
+[10.080s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/imu_sensor/lib'
+[10.081s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/imu_sensor/bin'
+[10.081s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/imu_sensor/lib/pkgconfig/imu_sensor.pc'
+[10.082s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages'
+[10.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_sensor', 'pythonpath')
+[10.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/hook/pythonpath.ps1'
+[10.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/hook/pythonpath.dsv'
+[10.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/hook/pythonpath.sh'
+[10.089s] Level 1:colcon.colcon_core.environment:checking '/home/rbrv/ros2_ws/install/imu_sensor/bin'
+[10.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_sensor)
+[10.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/package.ps1'
+[10.092s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/package.dsv'
+[10.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/package.sh'
+[10.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/package.bash'
+[10.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor/package.zsh'
+[10.098s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rbrv/ros2_ws/install/imu_sensor/share/colcon-core/packages/imu_sensor)
+[10.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.100s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.101s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.101s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.123s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.124s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.124s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.205s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.206s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rbrv/ros2_ws/install/local_setup.ps1'
+[10.209s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rbrv/ros2_ws/install/_local_setup_util_ps1.py'
+[10.217s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rbrv/ros2_ws/install/setup.ps1'
+[10.225s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rbrv/ros2_ws/install/local_setup.sh'
+[10.233s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rbrv/ros2_ws/install/_local_setup_util_sh.py'
+[10.236s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rbrv/ros2_ws/install/setup.sh'
+[10.242s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rbrv/ros2_ws/install/local_setup.bash'
+[10.243s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rbrv/ros2_ws/install/setup.bash'
+[10.246s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rbrv/ros2_ws/install/local_setup.zsh'
+[10.251s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rbrv/ros2_ws/install/setup.zsh'

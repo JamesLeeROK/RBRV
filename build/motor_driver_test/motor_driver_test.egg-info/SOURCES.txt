@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+motor_driver_test.egg-info/PKG-INFO
+motor_driver_test.egg-info/SOURCES.txt
+motor_driver_test.egg-info/dependency_links.txt
+motor_driver_test.egg-info/entry_points.txt
+motor_driver_test.egg-info/requires.txt
+motor_driver_test.egg-info/top_level.txt
+motor_driver_test.egg-info/zip-safe
+resource/motor_driver_test

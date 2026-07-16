@@ -1,0 +1,25 @@
+[6.611s] Invoking command in '/home/rbrv/ros2_ws/build/mecanum_driver_pid': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/mecanum_driver_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/mecanum_driver_pid/build --no-deps symlink_data
+[7.981s] running develop
+[8.738s] running egg_info
+[8.740s] creating mecanum_driver_pid.egg-info
+[8.848s] writing mecanum_driver_pid.egg-info/PKG-INFO
+[8.850s] writing dependency_links to mecanum_driver_pid.egg-info/dependency_links.txt
+[8.857s] writing entry points to mecanum_driver_pid.egg-info/entry_points.txt
+[8.857s] writing requirements to mecanum_driver_pid.egg-info/requires.txt
+[8.864s] writing top-level names to mecanum_driver_pid.egg-info/top_level.txt
+[8.865s] writing manifest file 'mecanum_driver_pid.egg-info/SOURCES.txt'
+[9.049s] reading manifest file 'mecanum_driver_pid.egg-info/SOURCES.txt'
+[9.051s] writing manifest file 'mecanum_driver_pid.egg-info/SOURCES.txt'
+[9.121s] running build_ext
+[9.125s] Creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages/mecanum-driver-pid.egg-link (link to .)
+[9.128s] Installing mecanum_driver_node script to /home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/mecanum_driver_pid
+[9.128s] Installing pwm_adjustable script to /home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/mecanum_driver_pid
+[9.128s] 
+[9.128s] Installed /home/rbrv/ros2_ws/build/mecanum_driver_pid
+[9.129s] running symlink_data
+[9.130s] creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index
+[9.132s] creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index/resource_index
+[9.132s] creating /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index/resource_index/packages
+[9.133s] symbolically linking /home/rbrv/ros2_ws/build/mecanum_driver_pid/resource/mecanum_driver_pid -> /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/ament_index/resource_index/packages
+[9.133s] symbolically linking /home/rbrv/ros2_ws/build/mecanum_driver_pid/package.xml -> /home/rbrv/ros2_ws/install/mecanum_driver_pid/share/mecanum_driver_pid
+[9.420s] Invoked command in '/home/rbrv/ros2_ws/build/mecanum_driver_pid' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/mecanum_driver_pid/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/mecanum_driver_pid/build --no-deps symlink_data

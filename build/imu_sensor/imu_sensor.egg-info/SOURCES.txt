@@ -1,0 +1,11 @@
+package.xml
+setup.cfg
+setup.py
+imu_sensor.egg-info/PKG-INFO
+imu_sensor.egg-info/SOURCES.txt
+imu_sensor.egg-info/dependency_links.txt
+imu_sensor.egg-info/entry_points.txt
+imu_sensor.egg-info/requires.txt
+imu_sensor.egg-info/top_level.txt
+imu_sensor.egg-info/zip-safe
+resource/imu_sensor
