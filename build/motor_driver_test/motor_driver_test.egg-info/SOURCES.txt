@@ -1,6 +1,9 @@
 package.xml
 setup.cfg
 setup.py
+motor_driver_test/__init__.py
+motor_driver_test/mecanum_driver_node.py
+motor_driver_test/motor_teleop_subscriber.py
 motor_driver_test.egg-info/PKG-INFO
 motor_driver_test.egg-info/SOURCES.txt
 motor_driver_test.egg-info/dependency_links.txt

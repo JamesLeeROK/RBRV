@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating motor_driver_test.egg-info
+writing motor_driver_test.egg-info/PKG-INFO
+writing dependency_links to motor_driver_test.egg-info/dependency_links.txt
+writing entry points to motor_driver_test.egg-info/entry_points.txt
+writing requirements to motor_driver_test.egg-info/requires.txt
+writing top-level names to motor_driver_test.egg-info/top_level.txt
+writing manifest file 'motor_driver_test.egg-info/SOURCES.txt'
+reading manifest file 'motor_driver_test.egg-info/SOURCES.txt'
+writing manifest file 'motor_driver_test.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages/motor-driver-test.egg-link (link to .)
+Installing mecanum_driver_node script to /home/rbrv/ros2_ws/install/motor_driver_test/lib/motor_driver_test
+Installing motor_teleop_subscriber script to /home/rbrv/ros2_ws/install/motor_driver_test/lib/motor_driver_test
+
+Installed /home/rbrv/ros2_ws/build/motor_driver_test
+running symlink_data
+creating /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index
+creating /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index/resource_index
+creating /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index/resource_index/packages
+symbolically linking /home/rbrv/ros2_ws/build/motor_driver_test/resource/motor_driver_test -> /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index/resource_index/packages
+symbolically linking /home/rbrv/ros2_ws/build/motor_driver_test/package.xml -> /home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test

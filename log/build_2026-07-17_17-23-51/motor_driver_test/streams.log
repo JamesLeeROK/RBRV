@@ -1,0 +1,25 @@
+[5.824s] Invoking command in '/home/rbrv/ros2_ws/build/motor_driver_test': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/motor_driver_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/motor_driver_test/build --no-deps symlink_data
+[7.360s] running develop
+[8.182s] running egg_info
+[8.182s] creating motor_driver_test.egg-info
+[8.262s] writing motor_driver_test.egg-info/PKG-INFO
+[8.262s] writing dependency_links to motor_driver_test.egg-info/dependency_links.txt
+[8.263s] writing entry points to motor_driver_test.egg-info/entry_points.txt
+[8.268s] writing requirements to motor_driver_test.egg-info/requires.txt
+[8.269s] writing top-level names to motor_driver_test.egg-info/top_level.txt
+[8.269s] writing manifest file 'motor_driver_test.egg-info/SOURCES.txt'
+[8.443s] reading manifest file 'motor_driver_test.egg-info/SOURCES.txt'
+[8.445s] writing manifest file 'motor_driver_test.egg-info/SOURCES.txt'
+[8.538s] running build_ext
+[8.542s] Creating /home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages/motor-driver-test.egg-link (link to .)
+[8.543s] Installing mecanum_driver_node script to /home/rbrv/ros2_ws/install/motor_driver_test/lib/motor_driver_test
+[8.544s] Installing motor_teleop_subscriber script to /home/rbrv/ros2_ws/install/motor_driver_test/lib/motor_driver_test
+[8.544s] 
+[8.544s] Installed /home/rbrv/ros2_ws/build/motor_driver_test
+[8.544s] running symlink_data
+[8.544s] creating /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index
+[8.545s] creating /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index/resource_index
+[8.545s] creating /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index/resource_index/packages
+[8.550s] symbolically linking /home/rbrv/ros2_ws/build/motor_driver_test/resource/motor_driver_test -> /home/rbrv/ros2_ws/install/motor_driver_test/share/ament_index/resource_index/packages
+[8.550s] symbolically linking /home/rbrv/ros2_ws/build/motor_driver_test/package.xml -> /home/rbrv/ros2_ws/install/motor_driver_test/share/motor_driver_test
+[8.874s] Invoked command in '/home/rbrv/ros2_ws/build/motor_driver_test' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/motor_driver_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/motor_driver_test/build --no-deps symlink_data

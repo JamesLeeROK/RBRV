@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'mecanum_driver_node = mecanum_driver_pid.mecanum_driver_node_final:main',
+            'mecanum_driver_tf = mecanum_driver_pid.mecanum_driver_node_tf:main',
             'pwm_adjustable = mecanum_driver_pid.pwm_adjustable_node:main',
         ],
     },

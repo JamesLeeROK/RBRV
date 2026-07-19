@@ -1,0 +1,546 @@
+[1mdiff --git a/build/imu_sensor/colcon_command_prefix_setup_py.sh.env b/build/imu_sensor/colcon_command_prefix_setup_py.sh.env[m
+[1mindex 421b3b7..1106879 100644[m
+[1m--- a/build/imu_sensor/colcon_command_prefix_setup_py.sh.env[m
+[1m+++ b/build/imu_sensor/colcon_command_prefix_setup_py.sh.env[m
+[36m@@ -1,14 +1,14 @@[m
+[31m-AMENT_PREFIX_PATH=/home/rbrv/ydlidar_ws/install/ydlidar_ros2_driver:/home/rbrv/ros2_ws/install/motor_driver_test:/home/rbrv/ros2_ws/install/mecanum_driver_pid:/home/rbrv/ros2_ws/install/imu_sensor:/opt/ros/jazzy[m
+[31m-CMAKE_PREFIX_PATH=/home/rbrv/ydlidar_ws/install/ydlidar_ros2_driver:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor[m
+[32m+[m[32mAMENT_PREFIX_PATH=/home/rbrv/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/home/rbrv/ros2_ws/install/motor_driver_test:/home/rbrv/ros2_ws/install/mecanum_driver_pid:/home/rbrv/ros2_ws/install/imu_sensor:/opt/ros/jazzy[m
+[32m+[m[32mCMAKE_PREFIX_PATH=/home/rbrv/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor[m
+ COLCON=1[m
+[31m-COLCON_PREFIX_PATH=/home/rbrv/ros2_ws/install:/home/rbrv/ydlidar_ws/install[m
+[32m+[m[32mCOLCON_PREFIX_PATH=/home/rbrv/ros2_ws/install:/home/rbrv/ydlidar_ros2_ws/install[m
+ COLORTERM=truecolor[m
+ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus[m
+ DEBUGINFOD_URLS=https://debuginfod.ubuntu.com[m
+ DESKTOP_SESSION=ubuntu[m
+ DISPLAY=:0[m
+ GDMSESSION=ubuntu[m
+[31m-GIO_LAUNCHED_DESKTOP_FILE_PID=3096[m
+[32m+[m[32mGIO_LAUNCHED_DESKTOP_FILE_PID=12959[m
+ GNOME_DESKTOP_SESSION_ID=this-is-deprecated[m
+ GNOME_KEYRING_CONTROL=/run/user/1000/keyring[m
+ GNOME_SETUP_DISPLAY=:1[m
+[36m@@ -18,41 +18,41 @@[m [mGTK_MODULES=gail:atk-bridge[m
+ GZ_CONFIG_PATH=/opt/ros/jazzy/opt/sdformat_vendor/share/gz[m
+ HOME=/home/rbrv[m
+ IM_CONFIG_PHASE=1[m
+[31m-INVOCATION_ID=a71baefee4b4433fba8f68c34b73c410[m
+[31m-JOURNAL_STREAM=8:20266[m
+[32m+[m[32mINVOCATION_ID=071180b608524fbe9090d4b300f4e322[m
+[32m+[m[32mJOURNAL_STREAM=8:26338[m
+ LANG=C.UTF-8[m
+ LD_LIBRARY_PATH=/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib[m
+ LESSCLOSE=/usr/bin/lesspipe %s %s[m
+ LESSOPEN=| /usr/bin/lesspipe %s[m
+ LOGNAME=rbrv[m
+ LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:[m
+[31m-MANAGERPID=2100[m
+[32m+[m[32mMANAGERPID=7925[m
+ MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure[m
+ MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=[m
+[31m-OLDPWD=/home/rbrv/ros2_ws/src/mecanum_driver_pid/mecanum_driver_pid[m
+[31m-PATH=/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+[32m+[m[32mOLDPWD=/home/rbrv[m
+[32m+[m[32mPATH=/home/rbrv/.local/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+ PWD=/home/rbrv/ros2_ws/build/imu_sensor[m
+[31m-PYTHONPATH=/home/rbrv/ros2_ws/build/motor_driver_test:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/mecanum_driver_pid:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/imu_sensor:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages[m
+[32m+[m[32mPYTHONPATH=/home/rbrv/ros2_ws/build/mecanum_driver_pid:/home/rbrv/ros2_ws/build/motor_driver_test:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/imu_sensor:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages[m
+ QT_ACCESSIBILITY=1[m
+ QT_IM_MODULE=ibus[m
+ ROS_AUTOMATIC_DISCOVERY_RANGE=SUBNET[m
+ ROS_DISTRO=jazzy[m
+ ROS_PYTHON_VERSION=3[m
+ ROS_VERSION=2[m
+[31m-SESSION_MANAGER=local/q:@/tmp/.ICE-unix/2335,unix/q:/tmp/.ICE-unix/2335[m
+[32m+[m[32mSESSION_MANAGER=local/q:@/tmp/.ICE-unix/8153,unix/q:/tmp/.ICE-unix/8153[m
+ SHELL=/bin/bash[m
+ SHLVL=1[m
+ SSH_AUTH_SOCK=/run/user/1000/keyring/ssh[m
+[31m-SYSTEMD_EXEC_PID=2486[m
+[32m+[m[32mSYSTEMD_EXEC_PID=8351[m
+ TERM=xterm-256color[m
+ TERMINATOR_DBUS_NAME=net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3[m
+ TERMINATOR_DBUS_PATH=/net/tenshu/Terminator2[m
+[31m-TERMINATOR_UUID=urn:uuid:5b0be4ce-4b96-4207-a646-c88c3d58c5c8[m
+[32m+[m[32mTERMINATOR_UUID=urn:uuid:de1b9ba9-370b-4efd-bf42-46e42a61df68[m
+ USER=rbrv[m
+ USERNAME=rbrv[m
+ VTE_VERSION=7600[m
+ WAYLAND_DISPLAY=wayland-0[m
+[31m-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.W6UCS3[m
+[32m+[m[32mXAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.06SFS3[m
+ XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg[m
+ XDG_CURRENT_DESKTOP=ubuntu:GNOME[m
+ XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop[m
+[1mdiff --git a/build/imu_sensor/imu_sensor.egg-info/SOURCES.txt b/build/imu_sensor/imu_sensor.egg-info/SOURCES.txt[m
+[1mindex 57bf148..24e242a 100644[m
+[1m--- a/build/imu_sensor/imu_sensor.egg-info/SOURCES.txt[m
+[1m+++ b/build/imu_sensor/imu_sensor.egg-info/SOURCES.txt[m
+[36m@@ -1,6 +1,10 @@[m
+ package.xml[m
+ setup.cfg[m
+ setup.py[m
+[32m+[m[32mimu_sensor/__init__.py[m
+[32m+[m[32mimu_sensor/mpu6050_imu_node.py[m
+[32m+[m[32mimu_sensor/mpu6050_test.py[m
+[32m+[m[32mimu_sensor/mpu_test.py[m
+ imu_sensor.egg-info/PKG-INFO[m
+ imu_sensor.egg-info/SOURCES.txt[m
+ imu_sensor.egg-info/dependency_links.txt[m
+[1mdiff --git a/build/imu_sensor/imu_sensor.egg-info/entry_points.txt b/build/imu_sensor/imu_sensor.egg-info/entry_points.txt[m
+[1mindex 08771b2..f7215be 100644[m
+[1m--- a/build/imu_sensor/imu_sensor.egg-info/entry_points.txt[m
+[1m+++ b/build/imu_sensor/imu_sensor.egg-info/entry_points.txt[m
+[36m@@ -1,2 +1,2 @@[m
+ [console_scripts][m
+[31m-mpu6050_node = imu_sensor.mpu6050_node:main[m
+[32m+[m[32mmpu6050_imu_node = imu_sensor.mpu6050_imu_node:main[m
+[1mdiff --git a/build/imu_sensor/imu_sensor.egg-info/top_level.txt b/build/imu_sensor/imu_sensor.egg-info/top_level.txt[m
+[1mindex 8b13789..ffdd35d 100644[m
+[1m--- a/build/imu_sensor/imu_sensor.egg-info/top_level.txt[m
+[1m+++ b/build/imu_sensor/imu_sensor.egg-info/top_level.txt[m
+[36m@@ -1 +1 @@[m
+[31m-[m
+[32m+[m[32mimu_sensor[m
+[1mdiff --git a/build/imu_sensor/prefix_override/__pycache__/sitecustomize.cpython-312.pyc b/build/imu_sensor/prefix_override/__pycache__/sitecustomize.cpython-312.pyc[m
+[1mindex 5e54668..c6cfb43 100644[m
+Binary files a/build/imu_sensor/prefix_override/__pycache__/sitecustomize.cpython-312.pyc and b/build/imu_sensor/prefix_override/__pycache__/sitecustomize.cpython-312.pyc differ
+[1mdiff --git a/build/mecanum_driver_pid/colcon_command_prefix_setup_py.sh.env b/build/mecanum_driver_pid/colcon_command_prefix_setup_py.sh.env[m
+[1mindex 258b5ac..eee813e 100644[m
+[1m--- a/build/mecanum_driver_pid/colcon_command_prefix_setup_py.sh.env[m
+[1m+++ b/build/mecanum_driver_pid/colcon_command_prefix_setup_py.sh.env[m
+[36m@@ -1,14 +1,14 @@[m
+[31m-AMENT_PREFIX_PATH=/home/rbrv/ydlidar_ws/install/ydlidar_ros2_driver:/home/rbrv/ros2_ws/install/motor_driver_test:/home/rbrv/ros2_ws/install/mecanum_driver_pid:/home/rbrv/ros2_ws/install/imu_sensor:/opt/ros/jazzy[m
+[31m-CMAKE_PREFIX_PATH=/home/rbrv/ydlidar_ws/install/ydlidar_ros2_driver:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor[m
+[32m+[m[32mAMENT_PREFIX_PATH=/home/rbrv/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/home/rbrv/ros2_ws/install/motor_driver_test:/home/rbrv/ros2_ws/install/mecanum_driver_pid:/home/rbrv/ros2_ws/install/imu_sensor:/opt/ros/jazzy[m
+[32m+[m[32mCMAKE_PREFIX_PATH=/home/rbrv/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor[m
+ COLCON=1[m
+[31m-COLCON_PREFIX_PATH=/home/rbrv/ros2_ws/install:/home/rbrv/ydlidar_ws/install[m
+[32m+[m[32mCOLCON_PREFIX_PATH=/home/rbrv/ros2_ws/install:/home/rbrv/ydlidar_ros2_ws/install[m
+ COLORTERM=truecolor[m
+ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus[m
+ DEBUGINFOD_URLS=https://debuginfod.ubuntu.com[m
+ DESKTOP_SESSION=ubuntu[m
+ DISPLAY=:0[m
+ GDMSESSION=ubuntu[m
+[31m-GIO_LAUNCHED_DESKTOP_FILE_PID=3096[m
+[32m+[m[32mGIO_LAUNCHED_DESKTOP_FILE_PID=12959[m
+ GNOME_DESKTOP_SESSION_ID=this-is-deprecated[m
+ GNOME_KEYRING_CONTROL=/run/user/1000/keyring[m
+ GNOME_SETUP_DISPLAY=:1[m
+[36m@@ -18,41 +18,41 @@[m [mGTK_MODULES=gail:atk-bridge[m
+ GZ_CONFIG_PATH=/opt/ros/jazzy/opt/sdformat_vendor/share/gz[m
+ HOME=/home/rbrv[m
+ IM_CONFIG_PHASE=1[m
+[31m-INVOCATION_ID=a71baefee4b4433fba8f68c34b73c410[m
+[31m-JOURNAL_STREAM=8:20266[m
+[32m+[m[32mINVOCATION_ID=071180b608524fbe9090d4b300f4e322[m
+[32m+[m[32mJOURNAL_STREAM=8:26338[m
+ LANG=C.UTF-8[m
+ LD_LIBRARY_PATH=/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib[m
+ LESSCLOSE=/usr/bin/lesspipe %s %s[m
+ LESSOPEN=| /usr/bin/lesspipe %s[m
+ LOGNAME=rbrv[m
+ LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:[m
+[31m-MANAGERPID=2100[m
+[32m+[m[32mMANAGERPID=7925[m
+ MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure[m
+ MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=[m
+[31m-OLDPWD=/home/rbrv/ros2_ws/src/mecanum_driver_pid/mecanum_driver_pid[m
+[31m-PATH=/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+[32m+[m[32mOLDPWD=/home/rbrv[m
+[32m+[m[32mPATH=/home/rbrv/.local/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+ PWD=/home/rbrv/ros2_ws/build/mecanum_driver_pid[m
+[31m-PYTHONPATH=/home/rbrv/ros2_ws/build/motor_driver_test:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/mecanum_driver_pid:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/imu_sensor:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages[m
+[32m+[m[32mPYTHONPATH=/home/rbrv/ros2_ws/build/mecanum_driver_pid:/home/rbrv/ros2_ws/build/motor_driver_test:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/imu_sensor:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages[m
+ QT_ACCESSIBILITY=1[m
+ QT_IM_MODULE=ibus[m
+ ROS_AUTOMATIC_DISCOVERY_RANGE=SUBNET[m
+ ROS_DISTRO=jazzy[m
+ ROS_PYTHON_VERSION=3[m
+ ROS_VERSION=2[m
+[31m-SESSION_MANAGER=local/q:@/tmp/.ICE-unix/2335,unix/q:/tmp/.ICE-unix/2335[m
+[32m+[m[32mSESSION_MANAGER=local/q:@/tmp/.ICE-unix/8153,unix/q:/tmp/.ICE-unix/8153[m
+ SHELL=/bin/bash[m
+ SHLVL=1[m
+ SSH_AUTH_SOCK=/run/user/1000/keyring/ssh[m
+[31m-SYSTEMD_EXEC_PID=2486[m
+[32m+[m[32mSYSTEMD_EXEC_PID=8351[m
+ TERM=xterm-256color[m
+ TERMINATOR_DBUS_NAME=net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3[m
+ TERMINATOR_DBUS_PATH=/net/tenshu/Terminator2[m
+[31m-TERMINATOR_UUID=urn:uuid:5b0be4ce-4b96-4207-a646-c88c3d58c5c8[m
+[32m+[m[32mTERMINATOR_UUID=urn:uuid:de1b9ba9-370b-4efd-bf42-46e42a61df68[m
+ USER=rbrv[m
+ USERNAME=rbrv[m
+ VTE_VERSION=7600[m
+ WAYLAND_DISPLAY=wayland-0[m
+[31m-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.W6UCS3[m
+[32m+[m[32mXAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.06SFS3[m
+ XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg[m
+ XDG_CURRENT_DESKTOP=ubuntu:GNOME[m
+ XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop[m
+[1mdiff --git a/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/SOURCES.txt b/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/SOURCES.txt[m
+[1mindex 890be3b..e0471cb 100644[m
+[1m--- a/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/SOURCES.txt[m
+[1m+++ b/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/SOURCES.txt[m
+[36m@@ -4,6 +4,7 @@[m [msetup.py[m
+ mecanum_driver_pid/__init__.py[m
+ mecanum_driver_pid/mecanum_driver_node.py[m
+ mecanum_driver_pid/mecanum_driver_node_final.py[m
+[32m+[m[32mmecanum_driver_pid/mecanum_driver_node_tf.py[m
+ mecanum_driver_pid/pwm_adjustable_node.py[m
+ mecanum_driver_pid.egg-info/PKG-INFO[m
+ mecanum_driver_pid.egg-info/SOURCES.txt[m
+[1mdiff --git a/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/entry_points.txt b/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/entry_points.txt[m
+[1mindex 0c4d809..a5cab9c 100644[m
+[1m--- a/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/entry_points.txt[m
+[1m+++ b/build/mecanum_driver_pid/mecanum_driver_pid.egg-info/entry_points.txt[m
+[36m@@ -1,3 +1,4 @@[m
+ [console_scripts][m
+ mecanum_driver_node = mecanum_driver_pid.mecanum_driver_node_final:main[m
+[32m+[m[32mmecanum_driver_tf = mecanum_driver_pid.mecanum_driver_node_tf:main[m
+ pwm_adjustable = mecanum_driver_pid.pwm_adjustable_node:main[m
+[1mdiff --git a/build/mecanum_driver_pid/prefix_override/__pycache__/sitecustomize.cpython-312.pyc b/build/mecanum_driver_pid/prefix_override/__pycache__/sitecustomize.cpython-312.pyc[m
+[1mindex f1cae90..3007478 100644[m
+Binary files a/build/mecanum_driver_pid/prefix_override/__pycache__/sitecustomize.cpython-312.pyc and b/build/mecanum_driver_pid/prefix_override/__pycache__/sitecustomize.cpython-312.pyc differ
+[1mdiff --git a/build/motor_driver_test/colcon_command_prefix_setup_py.sh.env b/build/motor_driver_test/colcon_command_prefix_setup_py.sh.env[m
+[1mindex 6a3473e..d63da79 100644[m
+[1m--- a/build/motor_driver_test/colcon_command_prefix_setup_py.sh.env[m
+[1m+++ b/build/motor_driver_test/colcon_command_prefix_setup_py.sh.env[m
+[36m@@ -1,14 +1,14 @@[m
+[31m-AMENT_PREFIX_PATH=/home/rbrv/ydlidar_ws/install/ydlidar_ros2_driver:/home/rbrv/ros2_ws/install/motor_driver_test:/home/rbrv/ros2_ws/install/mecanum_driver_pid:/home/rbrv/ros2_ws/install/imu_sensor:/opt/ros/jazzy[m
+[31m-CMAKE_PREFIX_PATH=/home/rbrv/ydlidar_ws/install/ydlidar_ros2_driver:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor[m
+[32m+[m[32mAMENT_PREFIX_PATH=/home/rbrv/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/home/rbrv/ros2_ws/install/motor_driver_test:/home/rbrv/ros2_ws/install/mecanum_driver_pid:/home/rbrv/ros2_ws/install/imu_sensor:/opt/ros/jazzy[m
+[32m+[m[32mCMAKE_PREFIX_PATH=/home/rbrv/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor[m
+ COLCON=1[m
+[31m-COLCON_PREFIX_PATH=/home/rbrv/ros2_ws/install:/home/rbrv/ydlidar_ws/install[m
+[32m+[m[32mCOLCON_PREFIX_PATH=/home/rbrv/ros2_ws/install:/home/rbrv/ydlidar_ros2_ws/install[m
+ COLORTERM=truecolor[m
+ DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus[m
+ DEBUGINFOD_URLS=https://debuginfod.ubuntu.com[m
+ DESKTOP_SESSION=ubuntu[m
+ DISPLAY=:0[m
+ GDMSESSION=ubuntu[m
+[31m-GIO_LAUNCHED_DESKTOP_FILE_PID=3096[m
+[32m+[m[32mGIO_LAUNCHED_DESKTOP_FILE_PID=12959[m
+ GNOME_DESKTOP_SESSION_ID=this-is-deprecated[m
+ GNOME_KEYRING_CONTROL=/run/user/1000/keyring[m
+ GNOME_SETUP_DISPLAY=:1[m
+[36m@@ -18,41 +18,41 @@[m [mGTK_MODULES=gail:atk-bridge[m
+ GZ_CONFIG_PATH=/opt/ros/jazzy/opt/sdformat_vendor/share/gz[m
+ HOME=/home/rbrv[m
+ IM_CONFIG_PHASE=1[m
+[31m-INVOCATION_ID=a71baefee4b4433fba8f68c34b73c410[m
+[31m-JOURNAL_STREAM=8:20266[m
+[32m+[m[32mINVOCATION_ID=071180b608524fbe9090d4b300f4e322[m
+[32m+[m[32mJOURNAL_STREAM=8:26338[m
+ LANG=C.UTF-8[m
+ LD_LIBRARY_PATH=/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib[m
+ LESSCLOSE=/usr/bin/lesspipe %s %s[m
+ LESSOPEN=| /usr/bin/lesspipe %s[m
+ LOGNAME=rbrv[m
+ LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:[m
+[31m-MANAGERPID=2100[m
+[32m+[m[32mMANAGERPID=7925[m
+ MEMORY_PRESSURE_WATCH=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure[m
+ MEMORY_PRESSURE_WRITE=c29tZSAyMDAwMDAgMjAwMDAwMAA=[m
+[31m-OLDPWD=/home/rbrv/ros2_ws/src/mecanum_driver_pid/mecanum_driver_pid[m
+[31m-PATH=/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+[32m+[m[32mOLDPWD=/home/rbrv[m
+[32m+[m[32mPATH=/home/rbrv/.local/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+ PWD=/home/rbrv/ros2_ws/build/motor_driver_test[m
+[31m-PYTHONPATH=/home/rbrv/ros2_ws/build/motor_driver_test:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/mecanum_driver_pid:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/imu_sensor:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages[m
+[32m+[m[32mPYTHONPATH=/home/rbrv/ros2_ws/build/mecanum_driver_pid:/home/rbrv/ros2_ws/build/motor_driver_test:/home/rbrv/ros2_ws/install/motor_driver_test/lib/python3.12/site-packages:/home/rbrv/ros2_ws/install/mecanum_driver_pid/lib/python3.12/site-packages:/home/rbrv/ros2_ws/build/imu_sensor:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages[m
+ QT_ACCESSIBILITY=1[m
+ QT_IM_MODULE=ibus[m
+ ROS_AUTOMATIC_DISCOVERY_RANGE=SUBNET[m
+ ROS_DISTRO=jazzy[m
+ ROS_PYTHON_VERSION=3[m
+ ROS_VERSION=2[m
+[31m-SESSION_MANAGER=local/q:@/tmp/.ICE-unix/2335,unix/q:/tmp/.ICE-unix/2335[m
+[32m+[m[32mSESSION_MANAGER=local/q:@/tmp/.ICE-unix/8153,unix/q:/tmp/.ICE-unix/8153[m
+ SHELL=/bin/bash[m
+ SHLVL=1[m
+ SSH_AUTH_SOCK=/run/user/1000/keyring/ssh[m
+[31m-SYSTEMD_EXEC_PID=2486[m
+[32m+[m[32mSYSTEMD_EXEC_PID=8351[m
+ TERM=xterm-256color[m
+ TERMINATOR_DBUS_NAME=net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3[m
+ TERMINATOR_DBUS_PATH=/net/tenshu/Terminator2[m
+[31m-TERMINATOR_UUID=urn:uuid:5b0be4ce-4b96-4207-a646-c88c3d58c5c8[m
+[32m+[m[32mTERMINATOR_UUID=urn:uuid:de1b9ba9-370b-4efd-bf42-46e42a61df68[m
+ USER=rbrv[m
+ USERNAME=rbrv[m
+ VTE_VERSION=7600[m
+ WAYLAND_DISPLAY=wayland-0[m
+[31m-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.W6UCS3[m
+[32m+[m[32mXAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.06SFS3[m
+ XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg[m
+ XDG_CURRENT_DESKTOP=ubuntu:GNOME[m
+ XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop[m
+[1mdiff --git a/build/motor_driver_test/motor_driver_test.egg-info/SOURCES.txt b/build/motor_driver_test/motor_driver_test.egg-info/SOURCES.txt[m
+[1mindex 2a326e8..d9b7fa6 100644[m
+[1m--- a/build/motor_driver_test/motor_driver_test.egg-info/SOURCES.txt[m
+[1m+++ b/build/motor_driver_test/motor_driver_test.egg-info/SOURCES.txt[m
+[36m@@ -1,6 +1,9 @@[m
+ package.xml[m
+ setup.cfg[m
+ setup.py[m
+[32m+[m[32mmotor_driver_test/__init__.py[m
+[32m+[m[32mmotor_driver_test/mecanum_driver_node.py[m
+[32m+[m[32mmotor_driver_test/motor_teleop_subscriber.py[m
+ motor_driver_test.egg-info/PKG-INFO[m
+ motor_driver_test.egg-info/SOURCES.txt[m
+ motor_driver_test.egg-info/dependency_links.txt[m
+[1mdiff --git a/build/motor_driver_test/motor_driver_test.egg-info/top_level.txt b/build/motor_driver_test/motor_driver_test.egg-info/top_level.txt[m
+[1mindex 8b13789..3fe36a6 100644[m
+[1m--- a/build/motor_driver_test/motor_driver_test.egg-info/top_level.txt[m
+[1m+++ b/build/motor_driver_test/motor_driver_test.egg-info/top_level.txt[m
+[36m@@ -1 +1 @@[m
+[31m-[m
+[32m+[m[32mmotor_driver_test[m
+[1mdiff --git a/build/motor_driver_test/prefix_override/__pycache__/sitecustomize.cpython-312.pyc b/build/motor_driver_test/prefix_override/__pycache__/sitecustomize.cpython-312.pyc[m
+[1mindex e2cfcbb..8e1f0f2 100644[m
+Binary files a/build/motor_driver_test/prefix_override/__pycache__/sitecustomize.cpython-312.pyc and b/build/motor_driver_test/prefix_override/__pycache__/sitecustomize.cpython-312.pyc differ
+[1mdiff --git a/install/setup.bash b/install/setup.bash[m
+[1mindex d5bc79b..4271fa5 100644[m
+[1m--- a/install/setup.bash[m
+[1m+++ b/install/setup.bash[m
+[36m@@ -22,7 +22,7 @@[m [m_colcon_prefix_chain_bash_source_script() {[m
+ COLCON_CURRENT_PREFIX="/opt/ros/jazzy"[m
+ _colcon_prefix_chain_bash_source_script "$COLCON_CURRENT_PREFIX/local_setup.bash"[m
+ # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script[m
+[31m-COLCON_CURRENT_PREFIX="/home/rbrv/ydlidar_ws/install"[m
+[32m+[m[32mCOLCON_CURRENT_PREFIX="/home/rbrv/ydlidar_ros2_ws/install"[m
+ _colcon_prefix_chain_bash_source_script "$COLCON_CURRENT_PREFIX/local_setup.bash"[m
+ [m
+ # source this prefix[m
+[1mdiff --git a/install/setup.ps1 b/install/setup.ps1[m
+[1mindex b8a9a1a..6556bb9 100644[m
+[1m--- a/install/setup.ps1[m
+[1m+++ b/install/setup.ps1[m
+[36m@@ -24,7 +24,7 @@[m [mfunction _colcon_prefix_chain_powershell_source_script {[m
+ [m
+ # source chained prefixes[m
+ _colcon_prefix_chain_powershell_source_script "/opt/ros/jazzy/local_setup.ps1"[m
+[31m-_colcon_prefix_chain_powershell_source_script "/home/rbrv/ydlidar_ws/install/local_setup.ps1"[m
+[32m+[m[32m_colcon_prefix_chain_powershell_source_script "/home/rbrv/ydlidar_ros2_ws/install/local_setup.ps1"[m
+ [m
+ # source this prefix[m
+ $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)[m
+[1mdiff --git a/install/setup.sh b/install/setup.sh[m
+[1mindex c652852..2ebb745 100644[m
+[1m--- a/install/setup.sh[m
+[1m+++ b/install/setup.sh[m
+[36m@@ -35,7 +35,7 @@[m [mCOLCON_CURRENT_PREFIX="/opt/ros/jazzy"[m
+ _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"[m
+ [m
+ # setting COLCON_CURRENT_PREFIX avoids relying on the build time prefix of the sourced script[m
+[31m-COLCON_CURRENT_PREFIX="/home/rbrv/ydlidar_ws/install"[m
+[32m+[m[32mCOLCON_CURRENT_PREFIX="/home/rbrv/ydlidar_ros2_ws/install"[m
+ _colcon_prefix_chain_sh_source_script "$COLCON_CURRENT_PREFIX/local_setup.sh"[m
+ [m
+ [m
+[1mdiff --git a/install/setup.zsh b/install/setup.zsh[m
+[1mindex 947d105..3a8a33f 100644[m
+[1m--- a/install/setup.zsh[m
+[1m+++ b/install/setup.zsh[m
+[36m@@ -22,7 +22,7 @@[m [m_colcon_prefix_chain_zsh_source_script() {[m
+ COLCON_CURRENT_PREFIX="/opt/ros/jazzy"[m
+ _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"[m
+ # setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script[m
+[31m-COLCON_CURRENT_PREFIX="/home/rbrv/ydlidar_ws/install"[m
+[32m+[m[32mCOLCON_CURRENT_PREFIX="/home/rbrv/ydlidar_ros2_ws/install"[m
+ _colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"[m
+ [m
+ # source this prefix[m
+[1mdiff --git a/log/latest_build b/log/latest_build[m
+[1mindex 06a5e93..f2f1e75 120000[m
+[1m--- a/log/latest_build[m
+[1m+++ b/log/latest_build[m
+[36m@@ -1 +1 @@[m
+[31m-build_2026-07-14_19-32-20[m
+\ No newline at end of file[m
+[32m+[m[32mbuild_2026-07-17_17-23-51[m
+\ No newline at end of file[m
+[1mdiff --git a/src/imu_sensor/setup.py b/src/imu_sensor/setup.py[m
+[1mindex 596e15d..3ad2d3f 100755[m
+[1m--- a/src/imu_sensor/setup.py[m
+[1m+++ b/src/imu_sensor/setup.py[m
+[36m@@ -24,7 +24,7 @@[m [msetup([m
+     },[m
+     entry_points={[m
+         'console_scripts': [[m
+[31m-            'mpu6050_node = imu_sensor.mpu6050_node:main'[m
+[32m+[m[32m            'mpu6050_imu_node = imu_sensor.mpu6050_imu_node:main'[m
+         ],[m
+     },[m
+ )[m
+[1mdiff --git a/src/mecanum_driver_pid/mecanum_driver_pid/__pycache__/mecanum_driver_node_final.cpython-312.pyc b/src/mecanum_driver_pid/mecanum_driver_pid/__pycache__/mecanum_driver_node_final.cpython-312.pyc[m
+[1mindex d55361e..412a24e 100644[m
+Binary files a/src/mecanum_driver_pid/mecanum_driver_pid/__pycache__/mecanum_driver_node_final.cpython-312.pyc and b/src/mecanum_driver_pid/mecanum_driver_pid/__pycache__/mecanum_driver_node_final.cpython-312.pyc differ
+[1mdiff --git a/src/mecanum_driver_pid/mecanum_driver_pid/mecanum_driver_node_final.py b/src/mecanum_driver_pid/mecanum_driver_pid/mecanum_driver_node_final.py[m
+[1mindex 849258e..2497124 100755[m
+[1m--- a/src/mecanum_driver_pid/mecanum_driver_pid/mecanum_driver_node_final.py[m
+[1m+++ b/src/mecanum_driver_pid/mecanum_driver_pid/mecanum_driver_node_final.py[m
+[36m@@ -98,14 +98,17 @@[m [mclass MecanumDriverNode(Node):[m
+         # --- 3. ROS 2 통신 설정 ---[m
+         self.sub_cmd_vel = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)[m
+         self.pub_odom = self.create_publisher(Odometry, 'odom', 10)[m
+[31m-        self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)[m
+[32m+[m[32m        # EKF(robot_localization)가 odom->base_link TF를 전담 발행하므로[m
+[32m+[m[32m        # 이 노드에서는 broadcaster를 생성하지 않습니다.[m
+[32m+[m[32m        # self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)[m
+ [m
+         self.target_vx = 0.0[m
+         self.target_vy = 0.0[m
+         self.target_wz = 0.0[m
+         self.last_cmd_time = self.get_clock().now()[m
+         [m
+[31m-        self.prev_encoders = [0, 0, 0, 0] [m
+[32m+[m[32m        self.prev_encoders = [0, 0, 0, 0][m
+[32m+[m[32m        self.encoders_initialized = False  # 재시작 시 모터드라이버가 가진 이전 누적값과의 거대 델타 방지용[m
+         self.odom_x = 0.0[m
+         self.odom_y = 0.0[m
+         self.odom_theta = 0.0[m
+[36m@@ -127,12 +130,25 @@[m [mclass MecanumDriverNode(Node):[m
+ [m
+         # --- 1. 엔코더 읽기 ---[m
+         try:[m
+[31m-            enc_data = self.bus.read_i2c_block_data(self.MOTOR_ADDR, self.MOTOR_ENCODER_TOTAL_ADDR, 16)[m
+[31m-            current_encoders = list(struct.unpack('iiii', bytes(enc_data)))[m
+[32m+[m[32m            try:[m
+[32m+[m[32m                enc_data = self.bus.read_i2c_block_data(self.MOTOR_ADDR, self.MOTOR_ENCODER_TOTAL_ADDR, 16)[m
+[32m+[m[32m                current_encoders = list(struct.unpack('iiii', bytes(enc_data)))[m
+[32m+[m[32m            except OSError:[m
+[32m+[m[32m                # 순간적 I2C 노이즈/글리치 대비 1회 즉시 재시도[m
+[32m+[m[32m                time.sleep(0.002)[m
+[32m+[m[32m                enc_data = self.bus.read_i2c_block_data(self.MOTOR_ADDR, self.MOTOR_ENCODER_TOTAL_ADDR, 16)[m
+[32m+[m[32m                current_encoders = list(struct.unpack('iiii', bytes(enc_data)))[m
+             [m
+[32m+[m[32m            # 💡 [재시작 대응] 모터드라이버는 별도 MCU라 노드를 재시작해도 엔코더[m
+[32m+[m[32m            # 누적값이 리셋되지 않음. 첫 사이클엔 prev_encoders=[0,0,0,0]과 비교하면[m
+[32m+[m[32m            # 거대한 가짜 델타가 나오므로, 첫 사이클은 기준점만 잡고 델타 계산은 건너뜀.[m
+[32m+[m[32m            if not self.encoders_initialized:[m
+[32m+[m[32m                self.prev_encoders = current_encoders[m
+[32m+[m[32m                self.encoders_initialized = True[m
+[32m+[m[32m                raise ValueError("encoder baseline initialized, skip this cycle")[m
+[32m+[m
+             # 💡 [안정성 수정] 엔코더 읽기에 성공했을 때만 이동 거리 연산을 수행합니다.[m
+             delta_hw = [current_encoders[i] - self.prev_encoders[i] for i in range(4)][m
+[31m-            self.prev_encoders = current_encoders[m
+ [m
+             # M2(RL)와 M3(FR) 물리 극성 보정 (B-A-A-B 장착 기준)[m
+             delta_fl = delta_hw[0]       [m
+[36m@@ -144,6 +160,21 @@[m [mclass MecanumDriverNode(Node):[m
+             dist_rl = (delta_rl / self.PPR) * (2.0 * math.pi * self.R)[m
+             dist_fr = (delta_fr / self.PPR) * (2.0 * math.pi * self.R)[m
+             dist_rr = (delta_rr / self.PPR) * (2.0 * math.pi * self.R)[m
+[32m+[m
+[32m+[m[32m            # 💡 [안전장치] 무부하 공회전, I2C 노이즈 등으로 물리적으로 불가능한[m
+[32m+[m[32m            # 큰 델타가 찍히면 그대로 odom/EKF에 흘려보내지 말고 이번 사이클은 버림.[m
+[32m+[m[32m            # prev_encoders를 아직 갱신하지 않았으므로, 여기서 예외를 던지면[m
+[32m+[m[32m            # 다음 사이클은 원래 기준점에서 다시 델타를 계산하게 됨 (기준점 오염 방지).[m
+[32m+[m[32m            # 예: 한 주기(0.05s)에 바퀴 하나가 0.5m 넘게 구르는 건 이 로봇 규격상 불가능하다고 가정.[m
+[32m+[m[32m            max_dist_per_cycle = 0.5  # [m], 로봇 최대 속도/주기에 맞춰 조정[m
+[32m+[m[32m            if max(abs(dist_fl), abs(dist_rl), abs(dist_fr), abs(dist_rr)) > max_dist_per_cycle:[m
+[32m+[m[32m                self.get_logger().warn([m
+[32m+[m[32m                    f"엔코더 이상값 감지, 이번 사이클 무시: "[m
+[32m+[m[32m                    f"fl={dist_fl:.2f} rl={dist_rl:.2f} fr={dist_fr:.2f} rr={dist_rr:.2f}"[m
+[32m+[m[32m                )[m
+[32m+[m[32m                raise ValueError("encoder sanity check failed")[m
+[32m+[m
+[32m+[m[32m            self.prev_encoders = current_encoders[m
+             [m
+             dx_local = (dist_fl + dist_fr + dist_rl + dist_rr) / 4.0[m
+             dy_local = (dist_fl - dist_fr - dist_rl + dist_rr) / 4.0[m
+[36m@@ -165,8 +196,13 @@[m [mclass MecanumDriverNode(Node):[m
+             w_actual_rr = dist_rr / self.timer_period[m
+             w_actuals = [w_actual_fl, w_actual_rl, w_actual_fr, w_actual_rr][m
+             [m
+[32m+[m[32m        except ValueError as e:[m
+[32m+[m[32m            # 의도된 스킵(엔코더 기준점 초기화, sanity check 실패)은 info로만 남김[m
+[32m+[m[32m            self.get_logger().info(f"엔코더 사이클 스킵: {e}")[m
+[32m+[m[32m            vel_x, vel_y, vel_z = 0.0, 0.0, 0.0[m
+[32m+[m[32m            w_actuals = [0.0, 0.0, 0.0, 0.0][m
+         except Exception as e:[m
+[31m-            # I2C 읽기 에러 발생 시: 이동 연산은 건너뛰지만, TF는 끊기지 않게 기존 값을 유지합니다.[m
+[32m+[m[32m            # 진짜 I2C 통신 에러 발생 시: 이동 연산은 건너뛰지만, TF는 끊기지 않게 기존 값을 유지합니다.[m
+             self.get_logger().warn(f"I2C Read 에러: {e}")[m
+             vel_x, vel_y, vel_z = 0.0, 0.0, 0.0[m
+             w_actuals = [0.0, 0.0, 0.0, 0.0][m
+[36m@@ -174,17 +210,20 @@[m [mclass MecanumDriverNode(Node):[m
+         # --- 2. TF & Odometry 발행 (에러가 나도 항상 실행됨) ---[m
+         q = quaternion_from_euler(0, 0, self.odom_theta)[m
+ [m
+[31m-        t = TransformStamped()[m
+[31m-        t.header.stamp = timestamp # 고정된 타임스탬프[m
+[31m-        t.header.frame_id = 'odom'[m
+[31m-        t.child_frame_id = 'base_link'[m
+[31m-        t.transform.translation.x = self.odom_x[m
+[31m-        t.transform.translation.y = self.odom_y[m
+[31m-        t.transform.rotation.x = q[0][m
+[31m-        t.transform.rotation.y = q[1][m
+[31m-        t.transform.rotation.z = q[2][m
+[31m-        t.transform.rotation.w = q[3][m
+[31m-        self.tf_broadcaster.sendTransform(t)[m
+[32m+[m[32m        # 💡 EKF(robot_localization)가 odom->base_link TF를 전담 발행합니다.[m
+[32m+[m[32m        # 이 노드가 동시에 TF를 쏘면 두 발행자가 충돌하므로 여기서는 발행하지 않고[m
+[32m+[m[32m        # /odom 토픽만 내보내 EKF의 odom0 입력으로 사용합니다.[m
+[32m+[m[32m        # t = TransformStamped()[m
+[32m+[m[32m        # t.header.stamp = timestamp[m
+[32m+[m[32m        # t.header.frame_id = 'odom'[m
+[32m+[m[32m        # t.child_frame_id = 'base_link'[m
+[32m+[m[32m        # t.transform.translation.x = self.odom_x[m
+[32m+[m[32m        # t.transform.translation.y = self.odom_y[m
+[32m+[m[32m        # t.transform.rotation.x = q[0][m
+[32m+[m[32m        # t.transform.rotation.y = q[1][m
+[32m+[m[32m        # t.transform.rotation.z = q[2][m
+[32m+[m[32m        # t.transform.rotation.w = q[3][m
+[32m+[m[32m        # self.tf_broadcaster.sendTransform(t)[m
+ [m
+         odom = Odometry()[m
+         odom.header.stamp = timestamp # 고정된 타임스탬프[m
+[36m@@ -205,6 +244,15 @@[m [mclass MecanumDriverNode(Node):[m
+         odom.twist.twist.linear.x = vel_x[m
+         odom.twist.twist.linear.y = vel_y[m
+         odom.twist.twist.angular.z = vel_z[m
+[32m+[m
+[32m+[m[32m        # twist covariance를 안 채우면 기본값 0 -> EKF가 "완전히 확실"로 오인해[m
+[32m+[m[32m        # IMU 각속도보다 무조건 우선시되던 문제가 있었음. 특히 angular.z(vyaw)는[m
+[32m+[m[32m        # 휠 슬립의 영향을 그대로 받으므로 IMU(0.005)보다 확실히 큰 값으로 설정해[m
+[32m+[m[32m        # 회전 추정에서 IMU가 우위를 갖도록 함.[m
+[32m+[m[32m        odom.twist.covariance[0] = 0.05   # vx[m
+[32m+[m[32m        odom.twist.covariance[7] = 0.05   # vy[m
+[32m+[m[32m        odom.twist.covariance[35] = 0.3   # vyaw (IMU 0.005 대비 훨씬 낮은 신뢰도)[m
+[32m+[m
+         self.pub_odom.publish(odom)[m
+ [m
+         # --- 3. 모터 제어 (Write) ---[m
+[36m@@ -269,7 +317,10 @@[m [mdef main(args=None):[m
+     finally:[m
+         node.stop_motors()[m
+         node.destroy_node()[m
+[31m-        rclpy.shutdown()[m
+[32m+[m[32m        # Ctrl+C 시 rclpy 기본 SIGINT 핸들러가 먼저 컨텍스트를 종료시켜둔 경우가 있어[m
+[32m+[m[32m        # rclpy.shutdown()을 그대로 부르면 "already called" 에러가 남. try_shutdown은[m
+[32m+[m[32m        # 이미 종료된 컨텍스트에 대해 호출해도 예외를 던지지 않음.[m
+[32m+[m[32m        rclpy.try_shutdown()[m
+ [m
+ if __name__ == '__main__':[m
+     main()[m
+\ No newline at end of file[m
+[1mdiff --git a/src/mecanum_driver_pid/setup.py b/src/mecanum_driver_pid/setup.py[m
+[1mindex fd4deb0..2b1f502 100755[m
+[1m--- a/src/mecanum_driver_pid/setup.py[m
+[1m+++ b/src/mecanum_driver_pid/setup.py[m
+[36m@@ -25,6 +25,7 @@[m [msetup([m
+     entry_points={[m
+         'console_scripts': [[m
+             'mecanum_driver_node = mecanum_driver_pid.mecanum_driver_node_final:main',[m
+[32m+[m[32m            'mecanum_driver_tf = mecanum_driver_pid.mecanum_driver_node_tf:main',[m
+             'pwm_adjustable = mecanum_driver_pid.pwm_adjustable_node:main',[m
+         ],[m
+     },[m

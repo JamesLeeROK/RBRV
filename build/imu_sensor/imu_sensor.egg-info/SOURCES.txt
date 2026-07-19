@@ -1,6 +1,10 @@
 package.xml
 setup.cfg
 setup.py
+imu_sensor/__init__.py
+imu_sensor/mpu6050_imu_node.py
+imu_sensor/mpu6050_test.py
+imu_sensor/mpu_test.py
 imu_sensor.egg-info/PKG-INFO
 imu_sensor.egg-info/SOURCES.txt
 imu_sensor.egg-info/dependency_links.txt

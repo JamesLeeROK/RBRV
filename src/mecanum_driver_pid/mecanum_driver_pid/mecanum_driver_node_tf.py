@@ -98,17 +98,14 @@ class MecanumDriverNode(Node):
         # --- 3. ROS 2 통신 설정 ---
         self.sub_cmd_vel = self.create_subscription(Twist, 'cmd_vel', self.cmd_vel_callback, 10)
         self.pub_odom = self.create_publisher(Odometry, 'odom', 10)
-        # EKF(robot_localization)가 odom->base_link TF를 전담 발행하므로
-        # 이 노드에서는 broadcaster를 생성하지 않습니다.
-        # self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
+        self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
 
         self.target_vx = 0.0
         self.target_vy = 0.0
         self.target_wz = 0.0
         self.last_cmd_time = self.get_clock().now()
         
-        self.prev_encoders = [0, 0, 0, 0]
-        self.encoders_initialized = False  # 재시작 시 모터드라이버가 가진 이전 누적값과의 거대 델타 방지용
+        self.prev_encoders = [0, 0, 0, 0] 
         self.odom_x = 0.0
         self.odom_y = 0.0
         self.odom_theta = 0.0
@@ -130,25 +127,12 @@ class MecanumDriverNode(Node):
 
         # --- 1. 엔코더 읽기 ---
         try:
-            try:
-                enc_data = self.bus.read_i2c_block_data(self.MOTOR_ADDR, self.MOTOR_ENCODER_TOTAL_ADDR, 16)
-                current_encoders = list(struct.unpack('iiii', bytes(enc_data)))
-            except OSError:
-                # 순간적 I2C 노이즈/글리치 대비 1회 즉시 재시도
-                time.sleep(0.002)
-                enc_data = self.bus.read_i2c_block_data(self.MOTOR_ADDR, self.MOTOR_ENCODER_TOTAL_ADDR, 16)
-                current_encoders = list(struct.unpack('iiii', bytes(enc_data)))
+            enc_data = self.bus.read_i2c_block_data(self.MOTOR_ADDR, self.MOTOR_ENCODER_TOTAL_ADDR, 16)
+            current_encoders = list(struct.unpack('iiii', bytes(enc_data)))
             
-            # 💡 [재시작 대응] 모터드라이버는 별도 MCU라 노드를 재시작해도 엔코더
-            # 누적값이 리셋되지 않음. 첫 사이클엔 prev_encoders=[0,0,0,0]과 비교하면
-            # 거대한 가짜 델타가 나오므로, 첫 사이클은 기준점만 잡고 델타 계산은 건너뜀.
-            if not self.encoders_initialized:
-                self.prev_encoders = current_encoders
-                self.encoders_initialized = True
-                raise ValueError("encoder baseline initialized, skip this cycle")
-
             # 💡 [안정성 수정] 엔코더 읽기에 성공했을 때만 이동 거리 연산을 수행합니다.
             delta_hw = [current_encoders[i] - self.prev_encoders[i] for i in range(4)]
+            self.prev_encoders = current_encoders
 
             # M2(RL)와 M3(FR) 물리 극성 보정 (B-A-A-B 장착 기준)
             delta_fl = delta_hw[0]       
@@ -160,21 +144,6 @@ class MecanumDriverNode(Node):
             dist_rl = (delta_rl / self.PPR) * (2.0 * math.pi * self.R)
             dist_fr = (delta_fr / self.PPR) * (2.0 * math.pi * self.R)
             dist_rr = (delta_rr / self.PPR) * (2.0 * math.pi * self.R)
-
-            # 💡 [안전장치] 무부하 공회전, I2C 노이즈 등으로 물리적으로 불가능한
-            # 큰 델타가 찍히면 그대로 odom/EKF에 흘려보내지 말고 이번 사이클은 버림.
-            # prev_encoders를 아직 갱신하지 않았으므로, 여기서 예외를 던지면
-            # 다음 사이클은 원래 기준점에서 다시 델타를 계산하게 됨 (기준점 오염 방지).
-            # 예: 한 주기(0.05s)에 바퀴 하나가 0.5m 넘게 구르는 건 이 로봇 규격상 불가능하다고 가정.
-            max_dist_per_cycle = 0.5  # [m], 로봇 최대 속도/주기에 맞춰 조정
-            if max(abs(dist_fl), abs(dist_rl), abs(dist_fr), abs(dist_rr)) > max_dist_per_cycle:
-                self.get_logger().warn(
-                    f"엔코더 이상값 감지, 이번 사이클 무시: "
-                    f"fl={dist_fl:.2f} rl={dist_rl:.2f} fr={dist_fr:.2f} rr={dist_rr:.2f}"
-                )
-                raise ValueError("encoder sanity check failed")
-
-            self.prev_encoders = current_encoders
             
             dx_local = (dist_fl + dist_fr + dist_rl + dist_rr) / 4.0
             dy_local = (dist_fl - dist_fr - dist_rl + dist_rr) / 4.0
@@ -196,13 +165,8 @@ class MecanumDriverNode(Node):
             w_actual_rr = dist_rr / self.timer_period
             w_actuals = [w_actual_fl, w_actual_rl, w_actual_fr, w_actual_rr]
             
-        except ValueError as e:
-            # 의도된 스킵(엔코더 기준점 초기화, sanity check 실패)은 info로만 남김
-            self.get_logger().info(f"엔코더 사이클 스킵: {e}")
-            vel_x, vel_y, vel_z = 0.0, 0.0, 0.0
-            w_actuals = [0.0, 0.0, 0.0, 0.0]
         except Exception as e:
-            # 진짜 I2C 통신 에러 발생 시: 이동 연산은 건너뛰지만, TF는 끊기지 않게 기존 값을 유지합니다.
+            # I2C 읽기 에러 발생 시: 이동 연산은 건너뛰지만, TF는 끊기지 않게 기존 값을 유지합니다.
             self.get_logger().warn(f"I2C Read 에러: {e}")
             vel_x, vel_y, vel_z = 0.0, 0.0, 0.0
             w_actuals = [0.0, 0.0, 0.0, 0.0]
@@ -210,20 +174,17 @@ class MecanumDriverNode(Node):
         # --- 2. TF & Odometry 발행 (에러가 나도 항상 실행됨) ---
         q = quaternion_from_euler(0, 0, self.odom_theta)
 
-        # 💡 EKF(robot_localization)가 odom->base_link TF를 전담 발행합니다.
-        # 이 노드가 동시에 TF를 쏘면 두 발행자가 충돌하므로 여기서는 발행하지 않고
-        # /odom 토픽만 내보내 EKF의 odom0 입력으로 사용합니다.
-        # t = TransformStamped()
-        # t.header.stamp = timestamp
-        # t.header.frame_id = 'odom'
-        # t.child_frame_id = 'base_link'
-        # t.transform.translation.x = self.odom_x
-        # t.transform.translation.y = self.odom_y
-        # t.transform.rotation.x = q[0]
-        # t.transform.rotation.y = q[1]
-        # t.transform.rotation.z = q[2]
-        # t.transform.rotation.w = q[3]
-        # self.tf_broadcaster.sendTransform(t)
+        t = TransformStamped()
+        t.header.stamp = timestamp # 고정된 타임스탬프
+        t.header.frame_id = 'odom'
+        t.child_frame_id = 'base_link'
+        t.transform.translation.x = self.odom_x
+        t.transform.translation.y = self.odom_y
+        t.transform.rotation.x = q[0]
+        t.transform.rotation.y = q[1]
+        t.transform.rotation.z = q[2]
+        t.transform.rotation.w = q[3]
+        self.tf_broadcaster.sendTransform(t)
 
         odom = Odometry()
         odom.header.stamp = timestamp # 고정된 타임스탬프
@@ -244,15 +205,6 @@ class MecanumDriverNode(Node):
         odom.twist.twist.linear.x = vel_x
         odom.twist.twist.linear.y = vel_y
         odom.twist.twist.angular.z = vel_z
-
-        # twist covariance를 안 채우면 기본값 0 -> EKF가 "완전히 확실"로 오인해
-        # IMU 각속도보다 무조건 우선시되던 문제가 있었음. 특히 angular.z(vyaw)는
-        # 휠 슬립의 영향을 그대로 받으므로 IMU(0.005)보다 확실히 큰 값으로 설정해
-        # 회전 추정에서 IMU가 우위를 갖도록 함.
-        odom.twist.covariance[0] = 0.05   # vx
-        odom.twist.covariance[7] = 0.05   # vy
-        odom.twist.covariance[35] = 0.3   # vyaw (IMU 0.005 대비 훨씬 낮은 신뢰도)
-
         self.pub_odom.publish(odom)
 
         # --- 3. 모터 제어 (Write) ---
@@ -317,10 +269,7 @@ def main(args=None):
     finally:
         node.stop_motors()
         node.destroy_node()
-        # Ctrl+C 시 rclpy 기본 SIGINT 핸들러가 먼저 컨텍스트를 종료시켜둔 경우가 있어
-        # rclpy.shutdown()을 그대로 부르면 "already called" 에러가 남. try_shutdown은
-        # 이미 종료된 컨텍스트에 대해 호출해도 예외를 던지지 않음.
-        rclpy.try_shutdown()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

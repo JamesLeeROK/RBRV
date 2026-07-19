@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'mpu6050_node = imu_sensor.mpu6050_node:main'
+            'mpu6050_imu_node = imu_sensor.mpu6050_imu_node:main'
         ],
     },
 )

@@ -1,0 +1,24 @@
+[5.962s] Invoking command in '/home/rbrv/ros2_ws/build/imu_sensor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/imu_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/imu_sensor/build --no-deps symlink_data
+[7.526s] running develop
+[8.099s] running egg_info
+[8.101s] creating imu_sensor.egg-info
+[8.213s] writing imu_sensor.egg-info/PKG-INFO
+[8.213s] writing dependency_links to imu_sensor.egg-info/dependency_links.txt
+[8.219s] writing entry points to imu_sensor.egg-info/entry_points.txt
+[8.219s] writing requirements to imu_sensor.egg-info/requires.txt
+[8.219s] writing top-level names to imu_sensor.egg-info/top_level.txt
+[8.219s] writing manifest file 'imu_sensor.egg-info/SOURCES.txt'
+[8.467s] reading manifest file 'imu_sensor.egg-info/SOURCES.txt'
+[8.467s] writing manifest file 'imu_sensor.egg-info/SOURCES.txt'
+[8.535s] running build_ext
+[8.535s] Creating /home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages/imu-sensor.egg-link (link to .)
+[8.538s] Installing mpu6050_imu_node script to /home/rbrv/ros2_ws/install/imu_sensor/lib/imu_sensor
+[8.541s] 
+[8.541s] Installed /home/rbrv/ros2_ws/build/imu_sensor
+[8.541s] running symlink_data
+[8.544s] creating /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index
+[8.544s] creating /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index/resource_index
+[8.544s] creating /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index/resource_index/packages
+[8.544s] symbolically linking /home/rbrv/ros2_ws/build/imu_sensor/resource/imu_sensor -> /home/rbrv/ros2_ws/install/imu_sensor/share/ament_index/resource_index/packages
+[8.544s] symbolically linking /home/rbrv/ros2_ws/build/imu_sensor/package.xml -> /home/rbrv/ros2_ws/install/imu_sensor/share/imu_sensor
+[8.784s] Invoked command in '/home/rbrv/ros2_ws/build/imu_sensor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rbrv/ros2_ws/build/imu_sensor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rbrv/ros2_ws/install/imu_sensor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/rbrv/ros2_ws/build/imu_sensor/build --no-deps symlink_data
